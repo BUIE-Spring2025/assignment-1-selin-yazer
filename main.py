@@ -1,4 +1,15 @@
 def int_to_roman(num):
+    numbers = [1,4,5,9,10,40,50,90,100,400,500,900,1000]
+    roman_equal = ["I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"]
+    i = 12
+    roman_numeral= " "
+    while num != 0:
+        if numbers[i] <= num:
+            roman_numeral += roman_equal[i]
+            num = num - numbers[i]
+        else:
+            i -= 1
+    return roman_numeral
     """
     Convert an integer to a Roman numeral.
 
