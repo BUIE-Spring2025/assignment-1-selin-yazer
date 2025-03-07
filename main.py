@@ -5,7 +5,7 @@ def int_to_roman(num):
         (5, "V"), (4, "IV"), (1, "I")
     ]
 
-    roman_numeral = " "
+    roman_numeral = ""
     for value, symbol in num_to_roman:
         while num >= value:
             roman_numeral += symbol
